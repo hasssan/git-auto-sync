@@ -115,6 +115,9 @@ func toEnvString(repoConfig RepoConfig) []string {
 		if k == "HOME" {
 			vals = append(vals, s)
 		}
+		if k == "SSH_AUTH_SOCK" {
+			vals = append(vals, s)
+		}
 	}
 
 	return vals
